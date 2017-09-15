@@ -1,0 +1,403 @@
+/* Universal Selectors */
+* {
+  box-sizing: border-box;
+}
+
+
+/** {
+  outline: 1px solid red;
+}*/
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background: url("../img/again.jpg") no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.container {
+  /*sticky footer */
+  flex: 1;
+}
+
+
+/* header section */
+
+.main-header {
+  text-align: center;
+  height: 15rem;
+}
+
+.header-logo {
+  width: 362px;
+  height: 100%;
+  margin-top: -2.5rem;
+}
+
+
+/* center content */
+
+.main-section-flex {
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+}
+
+.first-box {
+  margin-top: 1rem;
+  box-shadow: 1px 1px 1px #000;
+  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.702);
+  text-align: center;
+  border: 4px solid #fff;
+  width: 20.25rem;
+  height: 6.8125rem;
+  margin-left: 1.5rem;
+}
+
+.second-box {
+  margin-top: 1rem;
+  box-shadow: 1px 1px 1px #000;
+  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.702);
+  text-align: center;
+  border: 4px solid #fff;
+  width: 20.25rem;
+  height: 6.8125rem;
+  margin-left: 1.5rem;
+}
+
+.header {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-shadow: 0px 3px 2.91px rgba(2, 2, 2, 0.65);
+  margin-top: -4rem;
+}
+
+.slogan-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
+  margin-top: -4rem;
+  font-weight: bolder;
+  text-shadow: 0px 3px 2.91px rgba(2, 2, 2, 0.65);
+}
+
+.top-font {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 0px 3px 2.91px rgba(2, 2, 2, 0.65);
+  font-size: 1.3rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.coming-soon {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 3px 2.91px rgba(2, 2, 2, 0.65);
+  margin-right: 1.9rem;
+  opacity: 0.7;
+}
+
+.bottom-font-pete {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 3px 2.91px rgba(2, 2, 2, 0.65);
+  margin-right: 2rem;
+  font-size: 1.3rem;
+  display: block;
+  opacity: 0.7;
+  line-height: 2.5;
+}
+
+.bottom-font-pinellas {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 3px 2.91px rgba(2, 2, 2, 0.65);
+  font-size: 1.3rem;
+  display: block;
+  opacity: 0.7;
+  line-height: 2.5;
+}
+
+
+/* footer section */
+
+.main-footer-flex {
+  display: flex;
+  flex-direction: column;
+  background-image: -moz-linear-gradient( 0deg, rgb(0, 84, 166) 0%, rgb(72, 155, 207) 19%, rgb(144, 225, 248) 48%, rgb(0, 84, 166) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(0, 84, 166) 0%, rgb(72, 155, 207) 19%, rgb(144, 225, 248) 48%, rgb(0, 84, 166) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(0, 84, 166) 0%, rgb(72, 155, 207) 19%, rgb(144, 225, 248) 48%, rgb(0, 84, 166) 100%);
+}
+
+.footer-list-item {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  padding-right: 2.5rem;
+}
+
+.copyright-container {
+  color: #fff;
+  font-size: 12px;
+}
+
+.rv-logo {
+  width: auto;
+  height: 2rem;
+}
+
+
+/* Pseudo Selectors */
+
+.footer-list-item:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.first-box:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.second-box:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 430px) {
+  html {
+    background: url("../img/background-image.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .main-section-flex {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .main-footer-flex {
+    flex-direction: column;
+  }
+  .slogan-text {
+    margin-top: -12rem;
+    filter: brightness(95%);
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0 5px;
+  }
+  .header-logo {
+    width: 29rem;
+    height: 100%;
+    margin-top: -2.5rem;
+  }
+  .header {
+    font-size: 1.5rem;
+    margin-top: -4.5rem;
+    padding: 0 5px;
+  }
+  .footer-list .footer-list-item {
+    display: block;
+  }
+  .first-box {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.302);
+    margin-top: -0.5rem;
+    width: 15.25rem;
+  }
+  .second-box {
+    margin-right: 1rem;
+    background-color: rgba(0, 0, 0, 0.302);
+    margin-top: -0.5rem;
+    width: 15.25rem;
+  }
+  .top-font {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  .bottom-font-pete {
+    margin-right: 5.2rem;
+    font-size: 1.3rem;
+    line-height: 2.5;
+  }
+  .bottom-font-pinellas {
+    font-size: 1.3rem;
+    line-height: 2.5;
+    margin-right: 1.5rem;
+  }
+
+
+}
+
+@media (min-width: 780px) {
+
+  .footer-list .footer-list-item {
+    display: inline;
+  }
+  .slogan-text {
+    margin-top: -12rem;
+  }
+  .footer-list-item {
+    margin-left: -2.5rem;
+  }
+  .footer-list-container {
+    margin-left: 2.8rem;
+  }
+  .first-box {
+    position: relative;
+    margin-right: 5rem;
+    height: 4.8125rem;
+    margin-left: 1.8rem;
+    margin-top: 1rem;
+    width: 15.25rem;
+  }
+  .second-box {
+    margin-left: 5rem;
+    height: 4.8125rem;
+    margin-left: 1.8rem;
+    margin-top: 1rem;
+    width: 15.25rem;
+  }
+  .coming-soon {
+    position: absolute;
+    top: 60%;
+    right: -5%;
+    margin-right: 1.9rem;
+    opacity: 0.7;
+    font-size: 0.7rem;
+  }
+  .bottom-font-pete {
+    margin-right: 5.2rem;
+    font-size: 1.3rem;
+    line-height: 2.5;
+  }
+  .bottom-font-pinellas {
+    font-size: 1.3rem;
+    line-height: 2.5;
+    margin-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .main-section-flex {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .main-footer-flex {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .first-box {
+    position: relative;
+    margin-right: 5rem;
+    height: 4.8125rem;
+    margin-left: 1.8rem;
+    width: 15.25rem;
+  }
+  .second-box {
+    margin-left: 5rem;
+    height: 4.8125rem;
+    margin-left: 1.8rem;
+    width: 15.25rem;
+  }
+  .top-font {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  .header {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-shadow: 0px 3px 2.91px rgba(2, 2, 2, 0.65);
+  }
+  .header-logo {
+    height: 100%;
+    width: 35rem;
+  }
+  .slogan-text {
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    text-shadow: 0px 3px 2.91px rgba(2, 2, 2, 0.65);
+  }
+  .coming-soon {
+    position: absolute;
+    top: 60%;
+    right: -5%;
+    margin-right: 1.9rem;
+    opacity: 0.7;
+    font-size: 0.7rem;
+  }
+  .bottom-font-pete {
+    margin-right: 5.2rem;
+    font-size: 1.3rem;
+    line-height: 2.5;
+  }
+  .bottom-font-pinellas {
+    font-size: 1.3rem;
+    line-height: 2.5;
+    margin-right: 1.5rem;
+  }
+  .copyright-container {
+    margin-top: 0.3rem;
+  }
+  .footer-list-container {
+    margin-bottom: 3px;
+  }
+  .rv-logo-container {
+    margin-top: 0.5rem;
+  }
+  .footer-list-item {
+    margin-left: -2.5rem;
+  }
+  .first-box:hover {
+    transform: rotate(2.5deg);
+    cursor: pointer;
+  }
+  .second-box:hover {
+    transform: rotate(2.5deg);
+    cursor: pointer;
+  }
+}
